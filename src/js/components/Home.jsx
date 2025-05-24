@@ -14,9 +14,12 @@ const Home = () => {
 	}
 
 	return (
-		<div className="text-center container">
-			<div  className="row">
-				<input className="form-control mb-2" id="nuevaTarea" placeholder="Ingresa una Nueva tarea" style={{ width: "400px" }} onKeyUp={(event) => {
+		<div className="container bg-light">
+			<div>
+				<h1>My ToDo List</h1>
+			</div>
+			<div>
+				<input className="form-control mb-2 mx-1" id="nuevaTarea" placeholder="Ingresa una Nueva tarea" style={{ width: "400px" }} onKeyUp={(event) => {
 					if (event.key === 'Enter') {
 						setTareas([...tareas, event.target.value]);
 					}
@@ -32,13 +35,13 @@ const Home = () => {
 				}
 			</>
 			<div className="">
-				<div className="row alert alert-light my-0" style={{ width: "400px", height:"40px" }} >
+				<div className="alert alert-light my-0 mx-1" style={{ width: "400px", height:"40px" }} >
 					<div className="col-12">
-						<p>{tareas.length}  Items left</p>
+						<p className="pb-2">{tareas.length}  Items left</p>
 					</div>
 				</div>
-				<div className="row my-0 ms-1 border border-top-0" style={{ width: "370px", height:"8px" }} ></div>
-				<div className="row my-0 ms-2 border border-top-0" style={{ width: "360px", height:"8px" }} ></div>
+				<div className="my-0 ms-3 border border-top-0 rounded-bottom" style={{ width: "370px", height:"8px" }} ></div>
+				<div className="mt-0 ms-4 border border-top-0 rounded-bottom" style={{ width: "360px", height:"8px" }} ></div>
 			</div>
 
 		</div>

@@ -5,7 +5,7 @@ const Tarea = ({tarea, deleteToDo, index}) => {
     console.log(tarea);
     return (
         
-            <div className="row alert alert-light my-0" style={{width:"400px"}} role="alert" onMouseOver={()=>{setVisible(true)}} onMouseOut={()=>{setVisible(false)}}>
+            <div className="row alert alert-light my-0 mx-1" style={{width:"400px"}} role="alert" onMouseOver={()=>{setVisible(true)}} onMouseOut={()=>{setVisible(false)}}>
                 <div className="col-10">
                     <p>{tarea}</p>
                 </div>
